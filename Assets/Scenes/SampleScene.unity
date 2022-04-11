@@ -292,6 +292,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbd852a5bd0654f429320e109117c227, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nombreAlumno: Franco Raffaele
+  "a\xF1o": 4
+  "orientaci\xF3n": T
 --- !u!4 &1302764354
 Transform:
   m_ObjectHideFlags: 0

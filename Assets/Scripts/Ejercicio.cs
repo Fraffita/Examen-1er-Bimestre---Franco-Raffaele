@@ -7,17 +7,37 @@ public class Ejercicio : MonoBehaviour
 
     public string nombreAlumno;
     public int año;
-    public char orientación;
+    public string orientación;
 
     // Start is called before the first frame update
     void Start()
     {
         if (nombreAlumno == "" || año < 1 || año > 5)
         {
-            Debug.Log("Error");
+            Debug.Log("Error: verifique su nombre o año ingresado");
         }
+        
+        if (orientación == "T" || orientación == "D" || orientación == "G" || orientación == "M" || orientación == "H")
+        {
+             if (año < 3)
+            {
+              Debug.Log("Error. Aún estás en el ciclo básico");
+            }
+            else
+            {
+                Debug.Log("Muchas gracias " + nombreAlumno + "!");
 
-    }
+            }
+        }
+        else
+        {
+            Debug.Log("Solo puede ingresar T, D, G, M o H");
+
+        }
+        
+
+      
+    }   
 
     // Update is called once per frame
     void Update()
