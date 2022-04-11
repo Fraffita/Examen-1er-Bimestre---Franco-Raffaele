@@ -16,24 +16,27 @@ public class Ejercicio : MonoBehaviour
         {
             Debug.Log("Error: verifique su nombre o año ingresado");
         }
-        
-        if (orientación == "T" || orientación == "D" || orientación == "G" || orientación == "M" || orientación == "H")
+        else
         {
-             if (año < 3)
+            if (orientación == "T" || orientación == "D" || orientación == "G" || orientación == "M" || orientación == "H")
             {
-              Debug.Log("Error. Aún estás en el ciclo básico");
+                if (año < 3)
+                {
+                    Debug.Log("Error. Aún estás en el ciclo básico");
+                }
+                else
+                {
+                    Debug.Log("Muchas gracias " + nombreAlumno + "!");
+
+                }
             }
             else
             {
-                Debug.Log("Muchas gracias " + nombreAlumno + "!");
+                Debug.Log("Solo puede ingresar T, D, G, M o H");
 
             }
         }
-        else
-        {
-            Debug.Log("Solo puede ingresar T, D, G, M o H");
-
-        }
+       
         
 
       
